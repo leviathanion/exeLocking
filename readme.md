@@ -1,0 +1,10 @@
+# 64位windows环境下的exe加锁器
+* 基于64位汇编实现
+* 依赖于编译工具UASM64
+* 通过makefile文件构建
+* 加锁后的账号和密码在_injection.asm文件中定义
+  * lpszUser定义用户名  
+  * lpszPass定义密码
+* 构建好uasm64环境后，进入目录执行makefile即可生成程序
+* 此代码中附带有已经构建好的程序
+> uasm64环境变量的设置需要将其bin,include,lib目录添加到环境变量中
